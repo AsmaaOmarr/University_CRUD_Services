@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Student Information</title>
+</head>
+<body>
+<h1>Enter Student Information</h1>
+<form th:action="@{/university/addStudents}" method="post">
+  <div th:each="student, studentStat : ${students}">
+    <h2>Student [[${studentStat.index + 1}]]</h2>
+    <label th:for="'student.firstName' + ${studentStat.index}">First Name:</label>
+    <input th:id="'student.firstName' + ${studentStat.index}" th:field="*{students[__${studentStat.index}__].firstName}" required>
+
+    <label th:for="'student.lastName' + ${studentStat.index}">Last Name:</label>
+    <input th:id="'student.lastName' + ${studentStat.index}" th:field="*{students[__${studentStat.index}__].lastName}" required>
+
+    <!-- Add other student attributes here -->
+
+    <hr>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>

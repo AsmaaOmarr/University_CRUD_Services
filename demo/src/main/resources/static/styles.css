@@ -1,0 +1,198 @@
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue";
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    height: 100%;
+}
+
+
+header {
+  background-color: #0005;
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.name {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.navigation_bar {
+  transition: 0.7s all;
+}
+
+.navigation_bar a {
+  text-decoration: none;
+  color: rgb(255, 250, 250);
+  padding-left: 20px;
+  font-size: large;
+}
+
+.navigation_bar a:hover {
+  transition: 0.7s ease;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+
+section {
+  padding: 50px 50px;
+  height: 100vh;
+}
+
+.home {
+  width: -webkit-fill-available;
+  background: url("alexander-smagin-MEWRrCmEiGc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+
+}
+.container {
+    width: 880px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px auto; /* Center the container and add margin above/below */
+
+}
+h1{
+ text-align: center;
+}
+
+label{
+color: #6c757d;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, button ,select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+}
+input,select{
+  width: 99%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* CSS */
+.btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #00ABE7;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #0087CA;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background-color: #0087CA;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+
+.google{
+background: #EE2E31;
+}
+.google:hover{
+background-color: #EE2E31;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+
+#studentsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style for the table header (thead) */
+#studentsTable th {
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style for the table rows (tbody) */
+#studentsTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style for alternating row colors */
+#studentsTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+span{
+  color: red;
+}
+
+
+

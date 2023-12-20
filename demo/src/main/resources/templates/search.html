@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <p class="name">University Services <i class="fa fa-university" style="font-size:24px"></i></p>
+        <nav class="navigation_bar">
+            <a href="/index">Home</a>
+            <a href="/add">Add Student </a>
+            <a href="/search">Search </a>
+            <a href="/viewall">View All</a>
+            <a href="/delete">Delete</a>
+        </nav>
+    </header>
+
+    <section class="search" id="search">
+        <div class="container">
+            <form id="searchForm">
+                <h1>Search For Students</h1>
+                <select id="searchKey">
+                    <!-- Default option -->
+                    <option value="">Select Search key</option>
+                    <option value="id">ID</option>
+                    <option value="firstname">First Name</option>
+                    <option value="lastname">Last Name</option>
+                    <option value="gender">Gender</option>
+                    <option value="gpa">GPA</option>
+                    <option value="level">Level</option>
+                    <option value="address">Address</option>
+                </select>
+                <span id="searchKeyerror"></span>
+                <input type="text" placeholder="Enter search value" id="searchValue" name="search" required><br>
+                <span id="searchValueerror"></span><br>
+                <button type="button" onclick="searchStudents()" class="btn">Search</button><br>
+                <table id="studentsTable">
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Gender</th>
+                            <th>GPA</th>
+                            <th>Level</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentsTableBody"></tbody>
+                </table>
+
+
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

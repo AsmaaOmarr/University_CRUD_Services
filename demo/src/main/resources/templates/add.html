@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <p class="name">University Services <i class="fa fa-university" style="font-size:24px"></i></p>
+        <nav class="navigation_bar">
+            <a href="/index">Home</a>
+            <a href="/add">Add Student </a>
+            <a href="/search">Search </a>
+            <a href="/viewall">View All</a>
+            <a href="/delete">Delete</a>
+        </nav>
+    </header>
+    
+    <section class="main" id="main">
+        <div class="container">
+            <form id="addStudentsForm" action="">
+                <h1>Add Students</h1>
+                <input type="text" placeholder="Student ID" id="id"><br>
+                <span id="iderror"></span>
+                <input type="text" placeholder="First Name" id="firstName">
+                <span id="fnerror"></span>
+                <input type="text" placeholder="Last Name" id="lastName">
+                <span id="lnerror"></span>
+                <input type="text" placeholder="Gender" id="gender">
+                <span id="gendererror"></span>
+                <input type="number" placeholder="GPA" id="gpa" step="0.01">
+                <span id="gpaerror"></span>
+                <input type="number" placeholder="Level" id="level">
+                <span id="levelerror"></span>
+                <input type="text" placeholder="Address" id="address">
+                <span id="adderror"></span>
+                <button type="submit" class="btn">Submit Form</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <script src="index.js"></script>
+    <script src="validateForm.js"></script>
+</body>
+
+</html>

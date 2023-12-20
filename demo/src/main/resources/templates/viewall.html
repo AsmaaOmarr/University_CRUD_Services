@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body onload="viewStudents()">
+
+    <header>
+        <p class="name">University Services <i class="fa fa-university" style="font-size:24px"></i></p>
+        <nav class="navigation_bar">
+            <a href="/index">Home</a>
+            <a href="/add">Add Student </a>
+            <a href="/search">Search </a>
+            <a href="/viewall">View All</a>
+            <a href="/delete">Delete</a>
+        </nav>
+    </header>
+
+    <section class="viewall" id="viewall">
+
+        <!-- Add a new container for displaying students -->
+        <div class="container" id="studentsTableContainer">
+            <div>
+                <h1>Sort Students</h1>
+                <label for="sortAttribute">Sort by:</label>
+                <select id="sortAttribute">
+                    <option value="id">ID</option>
+                    <option value="firstname">First Name</option>
+                    <option value="lastname">Last Name</option>
+                    <option value="gender">Gender</option>
+                    <option value="gpa">GPA</option>
+                    <option value="level">Level</option>
+                    <option value="address">Address</option>
+                </select>
+
+                <label for="sortOrder">Sort Order:</label>
+                <select id="sortOrder">
+                    <option name="sortOrder" value="asc">Ascending</option>
+                    <option name="sortOrder" value="desc">Descending</option>
+                </select>
+
+                <button onclick="sortStudents()" class="btn">Sort Students</button>
+
+
+            </div>
+            <h1>View Students</h1>
+
+            <table id="studentsTable">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>GPA</th>
+                        <th>Level</th>
+                        <th>Address</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsTableBody"></tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

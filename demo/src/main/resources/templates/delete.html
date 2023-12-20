@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <p class="name">University Services <i class="fa fa-university" style="font-size:24px"></i></p>
+        <nav class="navigation_bar">
+            <a href="/index">Home</a>
+            <a href="/add">Add Student </a>
+            <a href="/search">Search </a>
+            <a href="/viewall">View All</a>
+            <a href="/delete">Delete</a>
+        </nav>
+    </header>
+
+    <section class="delete" id="delete">
+
+        <div class="container">
+            <form id="deleteForm">
+                <h1>Delete Student</h1>
+                <label for="deleteStudentID">Student ID to Delete:</label>
+                <input type="text" id="deleteStudentID" name="deleteStudentID" required><br>
+                <div id="displaydelete"></div><br>
+                <button type="button" onclick="deleteStudent()" class="btn google">Delete Student</button><br>
+            </form>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
